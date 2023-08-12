@@ -1,0 +1,80 @@
+.App {
+  width: 100vw;
+  display: "flex";
+  flex-direction: column;
+  height: 100vh;
+}
+
+.App-header {
+  background-color: #282c34;
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 2px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.sider {
+  width: 250px;
+  height: 100%;
+  font-size: 30px;
+}
+.footer {
+  color: white;
+  text-align: center;
+  background-color: #282c34;
+  padding: 1rem;
+}
+.footer ul {
+  list-style: none;
+  
+}
+.footer ul li{
+  line-height: normal!important ;
+  
+}
+.row {
+  flex-wrap: wrap;
+  display: flex;
+}
+.col {
+  padding: 0 15px;
+  width: 25%;
+  text-decoration: none;
+}
+.col h4 {
+  font-size: 18px;
+  text-transform: capitalize;
+  margin-bottom: 13px;
+}
+
+.navbar {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+.navbar li {
+  margin-right: 15px;
+  font-size: 20px;
+}
+.navbar li :hover{
+  color: red;
+  cursor: pointer;
+}
+.content {
+}
+.social{
+  list-style: none;
+}
+.help{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.last{
+  margin-top: 40px;
+}
+.con p{
+  justify-content: space-between;
+}
+
