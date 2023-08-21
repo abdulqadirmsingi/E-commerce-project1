@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { Button, Checkbox, Form, Input } from "antd";
+import { Link } from 'react-router-dom';
+
 
 const onFinish = async (values) => {
   console.log("Success:", values);
@@ -7,9 +9,9 @@ const onFinish = async (values) => {
 const onFinishFailed = (errorInfo) => {
   console.log("Failed:", errorInfo);
 };
-function Login() {
+const Login = ()=> {
   return (
-    <div>
+    <div className="login">
       <Form
         name="basic"
         labelCol={{
@@ -19,7 +21,8 @@ function Login() {
           span: 16,
         }}
         style={{
-          maxWidth: 600,
+          maxWidth: 1000,
+          width: 350,
         }}
         initialValues={{
           remember: true,
@@ -28,6 +31,9 @@ function Login() {
         onFinishFailed={onFinishFailed}
         autoComplete="off"
       >
+        <div className="loghead">
+          <h1>LOGIN</h1>
+        </div>
         <Form.Item
           label="Username"
           name="username"
@@ -58,22 +64,24 @@ function Login() {
           name="remember"
           valuePropName="checked"
           wrapperCol={{
-            offset: 8,
+            offset: 2,
             span: 16,
           }}
         >
-          <Checkbox>Remember me</Checkbox>
+          <Checkbox style={{marginRight:75}}>Remember me</Checkbox>
+          <Button type="primary" htmlType="submit" style={{marginLeft:108,width:100}}>
+            Login
+          </Button>
+          <p>Don't Have an account? <Link to="/signup"><a>Register</a></Link> </p>
+          <p> <Link to="/signup" style={{marginRight:90}}><a>Forgot Password?</a></Link> </p>
         </Form.Item>
 
         <Form.Item
           wrapperCol={{
-            offset: 8,
+            offset: 12,
             span: 16,
           }}
         >
-          <Button type="primary" htmlType="submit">
-            Submit
-          </Button>
         </Form.Item>
       </Form>
     </div>
