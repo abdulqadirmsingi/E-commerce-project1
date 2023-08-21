@@ -1,8 +1,10 @@
 .App {
-  width: 100vw;
-  display: "flex";
-  flex-direction: column;
-  height: 100vh;
+  margin: 0px;
+}
+.logohead{
+  width: 8vw;
+  height: 16vh;
+  margin-right: auto;
 }
 
 .App-header {
@@ -11,27 +13,43 @@
   display: flex;
   justify-content: space-between;
   color: white;
-  padding: 2px;
+  padding: 3px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
+.navbar {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.navbar li {
+  margin-right: 15px;
+  font-size: 19px;
+}
+.navbar li :hover {
+  color: wheat;
+  cursor: pointer;
+}
 .sider {
-  width: 250px;
-  height: 100%;
-  font-size: 30px;
+  width: 11vw;
+  margin-right: 1rem;
+}
+
+.main {
+  display: flex;
 }
 .footer {
   color: white;
   text-align: center;
   background-color: #282c34;
   padding: 1rem;
+  position: relative;
 }
 .footer ul {
   list-style: none;
-  
 }
-.footer ul li{
-  line-height: normal!important ;
-  
+.footer ul li {
+  line-height: normal !important ;
 }
 .row {
   flex-wrap: wrap;
@@ -48,33 +66,103 @@
   margin-bottom: 13px;
 }
 
-.navbar {
-  display: flex;
-  list-style: none;
-  justify-content: space-between;
-}
-.navbar li {
-  margin-right: 15px;
-  font-size: 20px;
-}
-.navbar li :hover{
-  color: red;
-  cursor: pointer;
-}
-.content {
-}
-.social{
+.social {
   list-style: none;
 }
-.help{
+.help {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.last{
+.last {
   margin-top: 40px;
 }
-.con p{
+.con p {
   justify-content: space-between;
 }
 
+.login {
+  text-align: center;
+  margin-left: 430px;
+  border: 1px solid hsl(0, 0%, 87%); 
+  padding: 18px;
+  max-width: 600px; 
+  border-radius: 20px;
+}
+.loghead {
+  justify-content: center;
+  padding-left: 12px;
+}
+.reg {
+  padding-bottom: 9px;
+}
+button {
+  margin-right: 200px;
+}
+@media (max-width: 600px) {
+  .App-header {
+    height: auto;
+    width: auto;
+  }
+  .navbar {
+    height: auto;
+    width: auto;
+  }
+}
+.sign {
+  text-align: center;
+  margin-left: 430px;
+}
+.home {
+  margin-bottom: 200px;
+}
+.content {
+  margin: "24px 16px";
+}
+
+.box span .img2 {
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.text {
+  display: flex;
+  justify-content: space-between;
+}
+h1 {
+  color: cornflowerblue;
+}
+.icon-wrapper {
+  position: relative;
+  padding: 0px 30px;
+}
+
+.icon-wrapper .anticon {
+  position: absolute;
+  top: -2px;
+  width: 16px;
+  height: 16px;
+  color: rgba(0, 0, 0, 0.25);
+  font-size: 16px;
+  line-height: 1;
+}
+
+.icon-wrapper .icon-wrapper-active {
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.icon-wrapper .anticon:first-child {
+  left: 0;
+}
+
+.icon-wrapper .anticon:last-child {
+  right: 0;
+}
+.sign {
+  border: 1px solid hsl(0, 0%, 87%); 
+  padding: 18px;
+  max-width: 600px; 
+  border-radius: 20px;
+}
