@@ -4,7 +4,6 @@ import { Menu } from "antd";
 import { useNavigate } from "react-router-dom";
 import {
   AppstoreOutlined,
-  UserOutlined,
   ShoppingOutlined,
   SkinOutlined,
   TabletOutlined,
@@ -14,6 +13,7 @@ import {
   GiftOutlined,
   BuildOutlined,
   YuqueOutlined,
+  DribbbleOutlined,
 } from "@ant-design/icons";
 
 function Sider() {
@@ -48,8 +48,17 @@ function Sider() {
               key: "/furnitures",
               icon: <BuildOutlined />,
             },
-            { label: "Sports", key: "/sports" },
+            { label: "Sports", key: "/sports", icon: <DribbbleOutlined /> },
           ]}
+          style={{
+          height: '80vh',
+          position: 'relative',
+          left: 0,
+          
+          bottom: 0,
+        justifyContent:'space-between'}}
+          
+          
         ></Menu>
       </div>
     </>
