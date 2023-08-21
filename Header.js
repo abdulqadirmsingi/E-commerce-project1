@@ -1,25 +1,23 @@
 import React from "react";
-import { Image, Space, Typography, Menu } from "antd";
+import { Image, Space } from "antd";
 import { Link, useNavigate } from "react-router-dom";
-import {
-  HomeOutlined
-} from '@ant-design/icons';
-
+import { HomeOutlined } from "@ant-design/icons";
+import versa from "../images/versa.jpg";
 
 function Header() {
   const navigate = useNavigate();
   return (
     <>
       <div className="App-header">
-        <Image
-          width={90}
-          src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg"
-        ></Image>
+        <img src={versa} className="logohead" ></img>
+        
         <Space>
-          <span style={{ color: "#1890ff", fontSize: 24 }}></span>
+          
           <ul className="navbar">
             <li>
-              <Link to="/home"><HomeOutlined /> Home</Link>
+              <Link to="/">
+                <HomeOutlined /> Home
+              </Link>
             </li>
             <li>
               <Link to="/news">News and Resources</Link>
