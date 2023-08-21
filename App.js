@@ -1,4 +1,4 @@
-import {  Space } from "antd";
+import { Space } from "antd";
 import "./App.css";
 import Header from "./components/Header";
 import Sider from "./components/Sider";
@@ -9,10 +9,16 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Space>
-        <Sider/>
-        <Content/>
-      </Space>
+      <div className="main">
+        <div className="sider">
+          <Sider />
+        </div>
+
+        <div className="content1">
+          <Content />
+        </div>
+      </div>
+
       <Footer />
     </div>
   );
